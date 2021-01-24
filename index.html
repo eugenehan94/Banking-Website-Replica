@@ -10,10 +10,10 @@
 <body>
     <!--Project - Start date: January 22 2021-->
     <!--The navigation bar -->
-    <div class = "header">     
+    <div class = "header" id = "">     
       <div class = "header-left-box">
-        <button type ="button">Menu</button>
-        <button type ="button">Search</button>
+        <button type ="button" style="color:red">Menu</button>
+        <button type ="button" style="color:red">Search</button>
       </div>
 
       <div class = "header-middle-box">
@@ -21,53 +21,109 @@
       </div>
 
       <div class = "header-right-box">
-        <button>Join S</button>
-        <button>Sign On</button>
+        <button type = "button" id="joinBtn">Join</button>
+        <button type = "button" id="signOnBtn">Sign On</button>
       </div>
     </div>
 
-    <!--Alert box-->
+     <!--Alert box-->
     <div class = "alert-box">
-      <p>COVID-19: We're to help with whatever you need.<a href="#">Tell us more</a></p>
+        <p>COVID-19: We're to help with whatever you need.<a href="#">Tell us more</a></p>
     </div>
 
-    <!--First row of information-->
-    <div class = "row-1">
-      <div class = "row-1-content">
-        <div class = "row-1-box">
-          
-          <div class = "row-1-box-top"> 
-            <h1>Bank Your Way to more cash</h1>
-          </div>
-          <div class = "row-1-box-middle">
-              <div class = "row-1-box-middle-left">   
-                <h2>Chequing Account</h2>
-                <p>Promotion</p>
-              </div>
-              <div class = "row-1-box-middle-right">   
-                <h2>Saving Account</h2>
-                <p>Promotion</p>
-              </div>
-          </div>
-          <div class =" row-1-box-bottom">
-            <button>Check out these offers</button>
+
+
+    <div class = "signOn-Container">
+        
+           
+
+        <div class = "header">     
+            <div class = "header-left-box">
+              <button type ="button" id="menuBtn">Menu</button>
+              <button type ="button" id="searchBtn">Search</button>
+            </div>
+      
+            <div class = "header-middle-box">
+              <h1>Insert Image Here</h1>
+            </div>
+      
+            <div class = "header-right-box">
+              <button type = "button" id="joinBtn">Join</button>
+              <button type = "button" id="signOnBtn">&times;</button>
+            </div>
           </div>
 
+
+
+
+
+
+            <div class = "signOn-LoginBox">
+                <div class ="signOn-LoginBox-Header">
+                    <h2>Sign on to Online banking</h2>
+                </div>
+                
+                <div class="signOn-LoginBox-Credentials">
+                    <div class="signOn-LoginBox-CardNumber">
+                        <p>Card Number</p>
+                        <input type="text"/>
+                    </div>
+                    <div class ="signOn-LoginBox-Password">
+                        <p>Password</p>
+                        <input type="text"/>
+                    </div>
+                </div>
+
+                <div class="signOn-LoginBox-Btn">
+                    <div class="signOn-LoginBox-Register">
+                        <button type="button">Register</button>
+                    </div>
+                    <div class="signOn-LoginBox-SignOnBtn">
+                        <button type="button">Sign On</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+     <!--First row of information-->
+  <div class = "row-1">
+    <div class = "row-1-content">
+      <div class = "row-1-box">
+        
+        <div class = "row-1-box-top"> 
+          <h1>Bank Your Way to more cash</h1>
         </div>
+        <div class = "row-1-box-middle">
+            <div class = "row-1-box-middle-left">   
+              <h2>Chequing Account</h2>
+              <p>Promotion</p>
+            </div>
+            <div class = "row-1-box-middle-right">   
+              <h2>Saving Account</h2>
+              <p>Promotion</p>
+            </div>
+        </div>
+        <div class ="row-1-box-bottom">
+          <button>Check out these offers</button>
+        </div>
+
       </div>
     </div>
+  </div>
 
-    <!--Second row of information-->
-    <div class = "row-2">
-      <div class = "row-2-content">
-        <h1>Welcome to ....</h1>
-        <p>What can we help you find?</p>
-      </div>
+  <!--Second row of information-->
+  <div class = "row-2">
+    <div class = "row-2-content">
+      <h1>Welcome to ....</h1>
+      <p>What can we help you find?</p>
     </div>
+  </div>
 
-    <!--Third row of information-->
+  <!--Third row of information-->
+   
+
 
   
-   <script src="script.js"></script>
+   <script src="javascript/script.js"></script>
 </body>
 </html>

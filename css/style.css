@@ -1,0 +1,114 @@
+body {
+    margin: 79.05px 0px 0px 0px; 
+  }
+  
+
+  .header {
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .header-left-box, .header-middle-box, .header-right-box {
+    padding: 0 10px;
+
+  }
+  .header-left-box button, .header-right-box button, .close {
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      margin: 10px; /*top&bottom(px) right&left(px)*/
+      outline: none;
+      color: white;
+      border: none;
+  }
+
+  .header-left-box button{
+    background-color: #333333;
+    
+  }
+  .header-right-box button {
+      border-radius: 20px;
+      padding: 10px;
+  }
+
+  #joinBtn{
+      background-color: #333333;
+      border: 1px solid #fff;
+  }
+
+  #signOnBtn {
+      background-color: red;
+  }
+
+
+
+
+.signOn-Container {
+   
+    height: 100%;
+    border: 1px solid red;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+
+}
+
+
+.signOn-LoginBox {
+    background-color: green;
+    width: 50%;
+    height: 400px;
+    border-radius: 5px;
+
+}
+
+  
+  .alert-box { 
+    background-color: #E0F0fD;
+    padding: 10px;
+  }
+  
+  
+  .row-1 {
+    border: 1px solid black;
+    height: 569.52px;
+    background-image: url("/images/staringAtBeach.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+  .row-1-content {
+    background-color: #ffffff;
+    width: 50%;
+    border-radius: 5px;
+    margin: 120px 50px;
+        
+  }
+  .row-1-box-top {
+      text-align: center;
+  }
+  .row-1-box-middle {
+      display: flex;
+      justify-content: space-around;
+      border: 1px solid black;    
+  }
+  .row-1-box-bottom {
+      display: flex;
+      justify-content: center;
+  }
+  
+  .row-2-content {
+    text-align: center;
+  }
