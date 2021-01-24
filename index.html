@@ -9,11 +9,12 @@
 </head>
 <body>
     <!--Project - Start date: January 22 2021-->
+    
     <!--The navigation bar -->
     <div class = "header" id = "">     
       <div class = "header-left-box">
-        <button type ="button" style="color:red">Menu</button>
-        <button type ="button" style="color:red">Search</button>
+        <button type ="button" id="menuOption">Menu</button>
+        <button type ="button">Search</button>
       </div>
 
       <div class = "header-middle-box">
@@ -26,17 +27,32 @@
       </div>
     </div>
 
-     <!--Alert box-->
-    <div class = "alert-box">
-        <p>COVID-19: We're to help with whatever you need.<a href="#">Tell us more</a></p>
-    </div>
+     <!--Overlay when the menu option is clicked-->
+     <div class = "menu-container">
+        <!-- The navigation bar,
+        the one is including in the id for the buttons, so it allows the sign-on buttons
+        to work-->
+        <div class="header">
+          <div class = "header-left-box">
+            <button type ="button" id="menuBtn1">Menu</button>
+            <button type ="button" id="searchBtn1">Search</button>
+          </div>
+    
+          <div class = "header-middle-box">
+            <h1>Insert Image Here</h1>
+          </div>
+    
+          <div class = "header-right-box">
+            <button type = "button" id="joinBtnHidden1">Join</button>
+            <button type = "button" id="signOnBtnChange1">&times; Close</button>
+          </div>
+       </div>
+     </div>
 
 
-
+    <!--Overlay when sign on button is clicked-->
     <div class = "signOn-Container">
-        
-           
-
+        <!--Preserves the original fixed header on top-->
         <div class = "header">     
             <div class = "header-left-box">
               <button type ="button" id="menuBtn">Menu</button>
@@ -48,16 +64,15 @@
             </div>
       
             <div class = "header-right-box">
-              <button type = "button" id="joinBtn">Join</button>
-              <button type = "button" id="signOnBtn">&times;</button>
+              <button type = "button" id="joinBtnHidden">Join</button>
+              <button type = "button" id="signOnBtnChange">&times; Close</button>
             </div>
           </div>
 
+         
+          <div class="signOn-background">
 
-
-
-
-
+            <!-- The sign-on contents of overlay-->
             <div class = "signOn-LoginBox">
                 <div class ="signOn-LoginBox-Header">
                     <h2>Sign on to Online banking</h2>
@@ -65,25 +80,48 @@
                 
                 <div class="signOn-LoginBox-Credentials">
                     <div class="signOn-LoginBox-CardNumber">
-                        <p>Card Number</p>
-                        <input type="text"/>
-                    </div>
+                        <div class="signOn-LoginBox-Credentials-Format"> 
+                          <p>Card Number</p>
+                        
+                        
+                          <input type="text"/>
+                        </div>
+                      </div>
                     <div class ="signOn-LoginBox-Password">
+                      <div class="signOn-LoginBox-Credentials-Format">    
                         <p>Password</p>
-                        <input type="text"/>
+                      
+                      
+                        <input type="password"/>
+                     
+                      <div class="forgotPassword"> 
+                          
+                            <a href="#">Reset your password</a>
+                          </div>
+                       </div>
                     </div>
                 </div>
 
                 <div class="signOn-LoginBox-Btn">
-                    <div class="signOn-LoginBox-Register">
-                        <button type="button">Register</button>
+                    <div class="signOn-LoginBox-Format">
+                        <button type="button" id="LoginBox-RegisterBtn">Register</button>
                     </div>
-                    <div class="signOn-LoginBox-SignOnBtn">
-                        <button type="button">Sign On</button>
+                    <div class="signOn-LoginBox-Format">
+                        <button type="button" id="LoginBox-signOnBtn">Sign On</button>
                     </div>
                 </div>
             </div>
+
+
+          </div>
+
+
     </div>
+
+    <!--Alert box-->
+    <div class = "alert-box">
+      <p>COVID-19: We're to help with whatever you need.<a href="#">Tell us more</a></p>
+  </div>
     
      <!--First row of information-->
   <div class = "row-1">
