@@ -103,15 +103,49 @@ body {
 }
 
 
-.menu-middle-choices a,
-.menu-right-choices-1 a, .menu-right-choices-2 a, .menu-right-choices-3 a,
-.menu-right-choices-4 a, .menu-right-choices-5 a {
+.menu-middle-choices, .menu-right-choices {
+  padding: 10px 0px;
+
+}
+
+.menu-middle-choices a, .menu-right-choices a {
   text-decoration: none;
   color: #000000;
   font-size: 24px;
 }
 
 
+/*The Overlay when the search button is clicked*/
+
+.search-container {
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+.searchBar-background{
+  border-top: 2px solid #272727;
+  background-color: #333333;
+  position: fixed;
+  top: 79.05px;
+  width: 100%;
+  height: 100px;
+  border: 2px solid green;
+  align-items: center;
+}
+.searchBar-div{
+  border: 2px solid red;
+  width: 100%;
+}
+.searchBar-div input[type="text"]{
+  width: 90%;
+}
 
 
 /* The overlay style - sign on button when clicked*/

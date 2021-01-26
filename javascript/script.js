@@ -168,3 +168,28 @@ function menuSubList(){
       } 
     }
 }
+
+
+let searchBtnSelected = document.querySelector("#searchBtnSelected");
+let searchContainer = document.querySelector(".search-container");
+
+let menuBtn2 = document.querySelector("#menuBtn2");
+let searchBtn2 = document.querySelector("#searchBtn2");
+let joinBtnHidden2 = document.querySelector("#joinBtnHidden2");
+let signOnBtnChange2 = document.querySelector("#signOnBtnChange2");
+
+
+searchBtnSelected.addEventListener("click", searchOverlay);
+function searchOverlay()
+{
+   searchContainer.style.display = "flex";
+   signOnBtnChange2.style.backgroundColor ="#333333";
+   menuBtn2.style.visibility = "hidden";
+   searchBtn2.style.visibility = "hidden";
+   joinBtnHidden2.style.visibility = "hidden";
+}
+
+signOnBtnChange2.addEventListener("click", closeSearchOverlay);
+function closeSearchOverlay(){
+   searchContainer.style.display = "none";
+}
