@@ -136,16 +136,39 @@ body {
   top: 79.05px;
   width: 100%;
   height: 100px;
-  border: 2px solid green;
-  align-items: center;
+  
+  display: flex;
+  justify-content: center;
+  
 }
 .searchBar-div{
-  border: 2px solid red;
-  width: 100%;
+  
+  width: 50%;
+  margin: auto;
+
 }
 .searchBar-div input[type="text"]{
-  width: 90%;
+  width: 70%;
+  margin: 0;
+  float: left;
+  outline: none;
+  border: none;
 }
+.searchBar-div button {
+  
+  background-color: red;
+  border: none;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  outline: none;
+  font-size: 14px;
+  float: left;
+  padding: 12px 30px;
+  color: white;
+  cursor: pointer;
+
+}
+
 
 
 /* The overlay style - sign on button when clicked*/
@@ -210,7 +233,6 @@ input[type=text]:focus, input[type=password]:focus{
 .signOn-LoginBox-Btn {
   display: flex;
   justify-content: space-around;
-
   height: 30%;
   align-items: center;
 }
@@ -256,7 +278,7 @@ width: 45%;
   
   /*First row of content*/
   .row-1 {
-    border: 1px solid black;
+    border-top: 1px solid #E0F0fD;
     height: 569.52px;
     background-image: url("/images/staringAtBeach.jpg");
     background-size: cover;
@@ -266,21 +288,43 @@ width: 45%;
   .row-1-content {
     background-color: #ffffff;
     width: 50%;
+    height: 50vh;
     border-radius: 5px;
     margin: 120px 50px;
         
   }
+  .row-1-box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 1px 1px #aaaaaa;
+  }
   .row-1-box-top {
       text-align: center;
+      border: 1px solid black;
+      height: 20%;
   }
   .row-1-box-middle {
       display: flex;
       justify-content: space-around;
-      border: 1px solid black;    
+      border: 1px solid black;
+      height: 50%;    
   }
+ 
   .row-1-box-bottom {
       display: flex;
       justify-content: center;
+      height: 15%;   
+  }
+  .row-1-box-bottom button {
+    background-color: #333333;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 10px;
   }
   
   .row-2-content {
