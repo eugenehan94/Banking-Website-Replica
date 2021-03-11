@@ -1,76 +1,79 @@
 body {
-    margin: 79.05px 0px 0px 0px; 
-  }
-  
-  .header {
-    background-color: #333333;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  .header-left-box, .header-middle-box, .header-right-box {
-    padding: 0 10px;
+  margin: 79.05px 0px 0px 0px;
+}
 
-  }
-  .header-left-box button, .header-right-box button, .close {
-      font-size: 16px;
-      font-weight: bold;
-      cursor: pointer;
-      margin: 10px; /*top&bottom(px) right&left(px)*/
-      outline: none;
-      color: white;
-      border: none;
-  }
+.header {
+  background-color: #333333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
-  .header-left-box button{
-    background-color: #333333;
-    
-  }
-  .header-right-box button {
-      border-radius: 20px;
-      padding: 10px;
-  }
+.header-left-box,
+.header-middle-box,
+.header-right-box {
+  padding: 0 10px;
+}
+.header-left-box button,
+.header-right-box button,
+.close {
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 10px; /*top&bottom(px) right&left(px)*/
+  outline: none;
+  color: white;
+  border: none;
+}
 
-  #joinBtn{
-      background-color: #333333;
-      border: 1px solid #fff;
-  }
+.header-left-box button {
+  background-color: #333333;
+}
 
-  #signOnBtn {
-      background-color: red;
-  }
+.header-right-box button {
+  border-radius: 20px;
+  padding: 10px;
+}
+
+#joinBtn {
+  background-color: #333333;
+  border: 1px solid #fff;
+}
+
+#signOnBtn {
+  background-color: red;
+}
 
 /* The overlay style - menu option, when clicked */
-.menu-container{
+.menu-container {
   height: 100%;
   display: none;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .menu-choices {
-
-  background-color:#ffffff;
+  background-color: #ffffff;
   width: 100%;
   height: 350px;
   position: fixed;
   top: 79.05px;
   display: flex;
   justify-content: space-around;
-
 }
 
-.menu-left, .menu-middle, .menu-right {
+.menu-left,
+.menu-middle,
+.menu-right {
   width: 50%;
 }
 .menu-left {
@@ -80,74 +83,69 @@ body {
 .menu-middle {
   border-right: 1px dashed black;
 }
-.menu-middle, .menu-right {
+.menu-middle,
+.menu-right {
   padding-left: 20px;
 }
-
 
 .menuChoices button {
   font-size: 24px;
   outline: none;
   border: none;
   cursor: pointer;
-  background-color:#ffffff;
+  background-color: #ffffff;
   padding: 10px 20px 10px 20px;
   width: 100%;
   margin: 0 auto;
   display: block;
 }
 
-
 .menuChoices .active {
   background-color: red;
 }
 
-
-.menu-middle-choices, .menu-right-choices {
+.menu-middle-choices,
+.menu-right-choices {
   padding: 10px 0px;
-
 }
 
-.menu-middle-choices a, .menu-right-choices a {
+.menu-middle-choices a,
+.menu-right-choices a {
   text-decoration: none;
   color: #000000;
   font-size: 24px;
 }
 
-
 /*The Overlay when the search button is clicked*/
 
 .search-container {
-    height: 100%;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0,0,0,0.5);
-    position: fixed;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
-.searchBar-background{
+.searchBar-background {
   border-top: 2px solid #272727;
   background-color: #333333;
   position: fixed;
   top: 79.05px;
   width: 100%;
   height: 100px;
-  
+
   display: flex;
   justify-content: center;
-  
 }
-.searchBar-div{
-  
+.searchBar-div {
   width: 50%;
   margin: auto;
-
 }
-.searchBar-div input[type="text"]{
+.searchBar-div input[type="text"] {
   width: 70%;
   margin: 0;
   float: left;
@@ -155,7 +153,6 @@ body {
   border: none;
 }
 .searchBar-div button {
-  
   background-color: red;
   border: none;
   border-bottom-right-radius: 5px;
@@ -166,29 +163,25 @@ body {
   padding: 12px 30px;
   color: white;
   cursor: pointer;
-
 }
-
-
 
 /* The overlay style - sign on button when clicked*/
 
 .signOn-Container {
-    height: 100%;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0,0,0,0.5);
-    position: fixed;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 .signOn-background {
   border-top: 2px solid #272727;
-  background-color:#333333;
+  background-color: #333333;
   width: 100%;
   height: 350px;
   position: fixed;
@@ -196,15 +189,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .signOn-LoginBox {
-    background-color: #ffffff;
-    width: 50%;
-    height: 280px;
-    border-radius: 20px;
-
+  background-color: #ffffff;
+  width: 50%;
+  height: 280px;
+  border-radius: 20px;
 }
 
 .signOn-LoginBox-Header {
@@ -214,19 +205,19 @@ body {
 .signOn-LoginBox-Credentials {
   display: flex;
   justify-content: space-around;
- 
 }
 
-.signOn-LoginBox-Credentials-Format{
- 
+.signOn-LoginBox-Credentials-Format {
   width: 100%;
-  margin:0px;
+  margin: 0px;
 }
 
-input[type=text], input[type=password]{
+input[type="text"],
+input[type="password"] {
   padding: 12px 110px 12px 5px;
 }
-input[type=text]:focus, input[type=password]:focus{
+input[type="text"]:focus,
+input[type="password"]:focus {
   background-color: #f5eded;
 }
 
@@ -237,13 +228,12 @@ input[type=text]:focus, input[type=password]:focus{
   align-items: center;
 }
 
-
-.signOn-LoginBox-Format{
-width: 45%;
-
+.signOn-LoginBox-Format {
+  width: 45%;
 }
 
-#LoginBox-RegisterBtn, #LoginBox-signOnBtn {
+#LoginBox-RegisterBtn,
+#LoginBox-signOnBtn {
   border: none;
   outline: none;
   cursor: pointer;
@@ -251,9 +241,8 @@ width: 45%;
   width: 100%;
   border-radius: 20px;
   font-size: 16px;
-  
 }
-#LoginBox-RegisterBtn{
+#LoginBox-RegisterBtn {
   border: 1px solid #333333;
 }
 #LoginBox-RegisterBtn:hover {
@@ -271,79 +260,80 @@ width: 45%;
 }
 
 /*The alert box style*/
-  .alert-box { 
-    background-color: #E0F0fD;
-    padding: 10px;
-  }
-  .alert-box p {
-    text-indent: 20px;
-    font-size: 16px;
-  }
+.alert-box {
+  background-color: #e0f0fd;
+  padding: 10px;
+}
+.alert-box p {
+  text-indent: 20px;
+  font-size: 16px;
+}
 
-  /*First row of content*/
-  .row-1 {
-    border-top: 1px solid #E0F0fD;
-    height: 569.52px;
-    background-image: url("/images/staringAtBeach.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+/*First row of content*/
+.row-1 {
+  border-top: 1px solid #e0f0fd;
+  height: 569.52px;
+  background-image: url("/images/staringAtBeach.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: -2;
+}
+.row-1-content {
+  background-color: rgb(246, 244, 244);
+  position: absolute;
+  top: 80px;
+  left: 30px;
+  width: 50%;
+  height: 50vh;
+  border-radius: 15px;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+}
+.row-1-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 1px 1px #aaaaaa;
+}
+.row-1-box-top {
+  text-align: center;
+}
+.row-1-box-top h1 {
+  margin-bottom: 1rem;
+}
+.row-1-box-middle {
+  display: flex;
+  justify-content: space-around;
+}
+.row-1-box-middle-left {
+  border-right: 2px dashed rgba(31, 31, 31, 0.5);
+  padding: 0 15px;
+}
+.row-1-box-middle-right {
+  padding: 0 15px;
+}
 
-  }
-  .row-1-content {
-    background-color: #ffffff;
-    width: 50%;
-    height: 50vh;
-    border-radius: 10px;
-    margin: 120px 50px;
-        
-  }
-  .row-1-box {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 1px 1px #aaaaaa;
-  }
-  .row-1-box-top {
-      text-align: center;
-      height: 20%;
-  }
-  .row-1-box-middle {
-      display: flex;
-      justify-content: space-around;
-   
-      height: 50%;    
-  }
-  .row-1-box-middle-left{
-    border-right: 2px dashed rgba(31, 31, 31, 0.5);
-    padding: 0 15px
-  }
-  .row-1-box-middle-right{
+.row-1-box-bottom {
+  display: flex;
+  justify-content: center;
+  height: 15%;
+  border: none;
+}
+.row-1-box-bottom button {
+  background-color: #333333;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 10px;
+  width: 50%;
+  outline: none;
+}
+.row-1-box-bottom button:hover {
+  background-color: #292929;
+}
 
-    padding: 0 15px;
-  }
- 
-  .row-1-box-bottom {
-      display: flex;
-      justify-content: center;
-      height: 15%;
-      border: none;   
-  }
-  .row-1-box-bottom button {
-    background-color: #333333;
-    border: none;
-    cursor: pointer;
-    border-radius: 20px;
-    color: #ffffff;
-    font-size: 16px;
-    margin-bottom: 10px;
-    width: 50%;
-    outline:none;
-  }
-  .row-1-box-bottom button:hover {
-    background-color: #292929;
-  }
-  
-  .row-2-content {
-    text-align: center;
-  }
+.row-2-content {
+  text-align: center;
+}
