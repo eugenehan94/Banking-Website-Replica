@@ -10,7 +10,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 1;
 }
 
 .header-left-box,
@@ -33,7 +33,10 @@ body {
 .header-left-box button {
   background-color: #333333;
 }
-
+.fa,
+.fas {
+  margin: 0 10px;
+}
 .header-right-box button {
   border-radius: 20px;
   padding: 10px;
@@ -147,6 +150,8 @@ body {
 .searchBar-div {
   width: 50%;
   margin: auto;
+  display: flex;
+  flex-direction: row;
 }
 .searchBar-div input[type="text"] {
   width: 70%;
@@ -312,7 +317,6 @@ input[type="password"]:focus {
 .row-1-box-bottom {
   display: flex;
   justify-content: center;
-  border: 1px solid black;
 }
 .row-1-box-bottom button {
   background-color: #333333;
@@ -330,6 +334,43 @@ input[type="password"]:focus {
   background-color: #292929;
 }
 
-.row-2-content {
+.row-2-heading {
   text-align: center;
+}
+.row-2-container {
+  display: flex;
+  justify-content: space-around;
+  border: 3px solid green;
+}
+
+.row-2-content-1,
+.row-2-content-2,
+.row-2-content-3 {
+  margin: 1rem;
+  max-width: 20rem;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.row-2-content-1 p,
+.row-2-content-2 p,
+.row-2-content-3 p {
+  font-size: 18px;
+
+  margin-top: 0;
+}
+.row-2-content-1 h1,
+.row-2-content-2 h1,
+.row-2-content-3 h1 {
+  margin: 2rem 0 0 0;
+}
+
+.row-2-content-1 {
+  background-color: #333333;
+  color: white;
+}
+.row-2-content-2,
+.row-2-content-3 {
+  background-color: rgb(238, 226, 226);
 }
