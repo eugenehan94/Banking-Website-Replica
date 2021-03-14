@@ -329,9 +329,11 @@ input[type="password"]:focus {
   width: 50%;
   outline: none;
   cursor: pointer;
+  transition: all 0.4s ease;
 }
 .row-1-box-bottom button:hover {
   background-color: #292929;
+  transition: all 0.4s ease;
 }
 
 .row-2-heading {
@@ -340,7 +342,6 @@ input[type="password"]:focus {
 .row-2-container {
   display: flex;
   justify-content: space-around;
-  border: 3px solid green;
 }
 
 .row-2-content-1,
@@ -372,5 +373,41 @@ input[type="password"]:focus {
 }
 .row-2-content-2,
 .row-2-content-3 {
-  background-color: rgb(238, 226, 226);
+  border: 1px solid rgba(128, 128, 128, 0.4);
+}
+
+#row-2-content-1-btn {
+  background-color: #ffffff;
+  outline: none;
+  border: none;
+  color: #333333;
+  cursor: pointer;
+  border-radius: 20px;
+  width: 15rem;
+  padding: 0.5rem;
+  font-size: 18px;
+  transition: all 0.4s ease;
+}
+#row-2-content-1-btn:hover {
+  background-color: #585151;
+  color: #ffffff;
+  transition: all 0.4s ease;
+}
+
+#row-2-content-2-btn,
+#row-2-content-3-btn {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid rgb(128, 128, 128);
+  border-radius: 20px;
+  width: 15rem;
+  padding: 0.5rem;
+  font-size: 18px;
+  transition: all 0.4s ease;
+}
+#row-2-content-2-btn:hover,
+#row-2-content-3-btn:hover {
+  background-color: #585151;
+  color: #ffffff;
+  transition: all 0.4s ease;
 }
