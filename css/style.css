@@ -9,10 +9,14 @@ body {
   align-items: center;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 1;
 }
-
+.fa-bank {
+  color:white;
+  font-size: 100px;
+  padding: 1rem;
+}
 .header-left-box,
 .header-middle-box,
 .header-right-box {
@@ -49,6 +53,16 @@ body {
 
 #signOnBtn {
   background-color: red;
+}
+
+
+@media screen and (max-width: 600px){
+  #searchBtnSelected {
+    display: none;
+  }
+  #joinBtn {
+    display: none;
+  }
 }
 
 /* The overlay style - menu option, when clicked */
@@ -294,6 +308,7 @@ input[type="password"]:focus {
   left: 30px;
   border-radius: 15px;
   box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+  padding: 1rem 2rem;
 }
 
 .row-1-box-top {
@@ -306,6 +321,10 @@ input[type="password"]:focus {
   display: flex;
   justify-content: space-around;
 }
+.row-1-box-middle p {
+font-size: 18px;
+margin: 0.3rem;
+}
 .row-1-box-middle-left {
   border-right: 2px dashed rgba(31, 31, 31, 0.5);
   padding: 0 15px;
@@ -317,6 +336,8 @@ input[type="password"]:focus {
 .row-1-box-bottom {
   display: flex;
   justify-content: center;
+  
+  margin: 0.8rem;
 }
 .row-1-box-bottom button {
   background-color: #333333;
@@ -335,13 +356,14 @@ input[type="password"]:focus {
   background-color: #292929;
   transition: all 0.4s ease;
 }
-
+/* Row 2  */
 .row-2-heading {
   text-align: center;
 }
 .row-2-container {
   display: flex;
   justify-content: space-around;
+ padding-bottom: 6rem;
 }
 
 .row-2-content-1,
@@ -352,6 +374,7 @@ input[type="password"]:focus {
   text-align: center;
   padding: 10px 20px;
   border-radius: 10px;
+  padding: 3rem;
 }
 
 .row-2-content-1 p,
@@ -410,4 +433,61 @@ input[type="password"]:focus {
   background-color: #585151;
   color: #ffffff;
   transition: all 0.4s ease;
+}
+@media screen and (max-width: 600px){
+.row-2 {
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.row-2-container {
+  display: flex;
+  flex-direction: column;
+}
+}
+
+/* Footer */
+
+.footer-container {
+  background-color: #333333;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.footer-links{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1000px;
+  
+}
+
+.footer-link-wrapper {
+  display: flex;
+}
+.footer-link-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+  width: 160px;
+  margin: 16px;
+  text-align: left;
+}
+.footer-link-items h2 {
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.footer-link-items a {
+  text-decoration: none;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+.footer-link-items a:hover {
+  color: #e7d6d6;
+  transition: 0.5 ease-out;
 }

@@ -1,287 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel = "stylesheet" href="css/style.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-    <!--Project - Start date: January 22 2021-->
-    
-    <!--The navigation bar -->
-    <div class = "header" id = "">     
-      <div class = "header-left-box">
-        <button type ="button" id="menuOption"><i class="fa fa-list"></i>Menu</button>
-        <button type ="button" id="searchBtnSelected"><i class='fas fa-search'></i>Search</button>
-      </div>
+  <!--Project - Start date: January 22 2021-->
 
-      <div class = "header-middle-box">
-        <h1>Insert Image Here</h1>
-      </div>
-
-      <div class = "header-right-box">
-        <button type = "button" id="joinBtn">Join</button>
-        <button type = "button" id="signOnBtn">Sign On</button>
-      </div>
+  <!--The navigation bar -->
+  <div class="header" id="">
+    <div class="header-left-box">
+      <button type="button" id="menuOption"><i class="fa fa-list"></i>Menu</button>
+      <button type="button" id="searchBtnSelected"><i class='fas fa-search'></i>Search</button>
     </div>
 
-     <!--Overlay when the menu option is clicked-->
-     <div class = "menu-container">
-        <!-- The navigation bar,
+    <div class="header-middle-box">
+      <i class="fa fa-bank fa-3x"></i>
+    </div>
+
+    <div class="header-right-box">
+      <button type="button" id="joinBtn">Join</button>
+      <button type="button" id="signOnBtn">Sign On</button>
+    </div>
+  </div>
+
+  <!--Overlay when the menu option is clicked-->
+  <div class="menu-container">
+    <!-- The navigation bar,
         the one is including in the id for the buttons, so it allows the sign-on buttons
         to work-->
-        <div class="header" id ="menuHeader">
-          <div class = "header-left-box">
-            <button type ="button" id="menuBtn1">Menu</button>
-            <button type ="button" id="searchBtn1">Search</button>
-          </div>
-    
-          <div class = "header-middle-box">
-            <h1>Insert Image Here</h1>
-          </div>
-    
-          <div class = "header-right-box">
-            <button type = "button" id="joinBtnHidden1">Join</button>
-            <button type = "button" id="signOnBtnChange1">&times; Close</button>
-          </div>
-       </div>
+    <div class="header" id="menuHeader">
+      <div class="header-left-box">
+        <button type="button" id="menuBtn1">Menu</button>
+        <button type="button" id="searchBtn1">Search</button>
+      </div>
 
-        <div class = "menu-choices">
-        
-              <div class ="menu-left">
-                    <div class ="menuChoices">
-                      <button type ="button" class="active" id="menuChoices1">Accounts</button>
-                    </div>
-                    <div class ="menuChoices">
-                      <button type = "button" id="menuChoices2">Credit Card</button>
-                    </div>
-                    <div class ="menuChoices">
-                      <button type = "button">Mortgages</button>
-                    </div>
-                    <div class ="menuChoices">
-                      <button type = "button">Borrowing</button>
-                    </div>
-                    <div class ="menuChoices">
-                      <button type = "button">Investments</button>
-                  </div>
-                  <div class ="menuChoices">
-                    <button type = "button">Banking</button>
-                </div>
+      <div class="header-middle-box">
+        <i class="fa fa-bank fa-3x"></i>
+      </div>
+
+      <div class="header-right-box">
+        <button type="button" id="joinBtnHidden1">Join</button>
+        <button type="button" id="signOnBtnChange1">&times; Close</button>
+      </div>
+    </div>
+
+    <div class="menu-choices">
+
+      <div class="menu-left">
+        <div class="menuChoices">
+          <button type="button" class="active" id="menuChoices1">Accounts</button>
+        </div>
+        <div class="menuChoices">
+          <button type="button" id="menuChoices2">Credit Card</button>
+        </div>
+        <div class="menuChoices">
+          <button type="button">Mortgages</button>
+        </div>
+        <div class="menuChoices">
+          <button type="button">Borrowing</button>
+        </div>
+        <div class="menuChoices">
+          <button type="button">Investments</button>
+        </div>
+        <div class="menuChoices">
+          <button type="button">Banking</button>
+        </div>
+      </div>
+
+
+      <div class="menu-middle">
+        <div class="menu-middle-heading">
+          <h2>Products and services</h2>
+        </div>
+        <div class="menu-middle-choices">
+          <a href="#"><span id="middleChoice1">No Fee Chequing</span></a>
+        </div>
+        <div class="menu-middle-choices">
+          <a href="#"><span id="middleChoice2">High Interest Savings</span></a>
+        </div>
+        <div class="menu-middle-choices">
+          <a href="#"><span id="middleChoice3">View All</span></a>
+        </div>
+        <div class="menu-middle-choices">
+          <a href="#"><span id="middleChoice4"></span></a>
+        </div>
+        <div class="menu-middle-choices">
+          <a href="#"><span id="middleChoice5"></span></a>
+        </div>
+        <div class="menu-middle-choices">
+          <a href="#"><span id="middleChoice6"></span></a>
+        </div>
+      </div>
+
+      <div class="menu-right">
+        <div class="menu-right-heading">
+          <h2>Tools and resources</h2>
+        </div>
+        <div class="menu-right-choices">
+          <a href="#"><span id="rightChoice1">Today's rates</span></a>
+        </div>
+        <div class="menu-right-choices">
+          <a href="#"><span id="rightChoice2"></span></a>
+        </div>
+        <div class="menu-right-choices">
+          <a href="#"><span id="rightChoice3"></span></a>
+        </div>
+        <div class="menu-right-choices">
+          <a href="#"><span id="rightChoice4"></span></a>
+        </div>
+        <div class="menu-right-choices">
+          <a href="#"><span id="rightChoice5"></span></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!--Overlay when the search button is clicked-->
+  <div class="search-container">
+    <div class="header">
+      <div class="header-left-box">
+        <button type="button" id="menuBtn2">Menu</button>
+        <button type="button" id="searchBtn2">Search</button>
+      </div>
+
+      <div class="header-middle-box">
+        <i class="fa fa-bank fa-3x"></i>
+      </div>
+
+      <div class="header-right-box">
+        <button type="button" id="joinBtnHidden2">Join</button>
+        <button type="button" id="signOnBtnChange2">&times; Close</button>
+      </div>
+    </div>
+
+    <div class="searchBar-background">
+
+      <div class="searchBar-div">
+        <input type="text" placeholder="What can we help you find?" />
+        <button type="button"><i class='fas fa-search'></i></button>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!--Overlay when sign on button is clicked-->
+  <div class="signOn-Container">
+    <!--Preserves the original fixed header on top-->
+    <div class="header">
+      <div class="header-left-box">
+        <button type="button" id="menuBtn">Menu</button>
+        <button type="button" id="searchBtn">Search</button>
+      </div>
+
+      <div class="header-middle-box">
+        <i class="fa fa-bank fa-3x"></i>
+      </div>
+
+      <div class="header-right-box">
+        <button type="button" id="joinBtnHidden">Join</button>
+        <button type="button" id="signOnBtnChange">&times; Close</button>
+      </div>
+    </div>
+
+
+    <div class="signOn-background">
+
+      <!-- The sign-on contents of overlay-->
+      <div class="signOn-LoginBox">
+        <div class="signOn-LoginBox-Header">
+          <h2>Sign on to Online banking</h2>
+        </div>
+
+        <div class="signOn-LoginBox-Credentials">
+          <div class="signOn-LoginBox-CardNumber">
+            <div class="signOn-LoginBox-Credentials-Format">
+              <p>Card Number</p>
+
+
+              <input type="text" />
+            </div>
+          </div>
+          <div class="signOn-LoginBox-Password">
+            <div class="signOn-LoginBox-Credentials-Format">
+              <p>Password</p>
+
+
+              <input type="password" />
+
+              <div class="forgotPassword">
+
+                <a href="#">Reset your password</a>
               </div>
-            
-
-            <div class ="menu-middle">
-                <div class="menu-middle-heading">
-                  <h2>Products and services</h2>
-                </div>
-                <div class="menu-middle-choices">
-                  <a href="#"><span id="middleChoice1">No Fee Chequing</span></a>
-                </div>
-                <div class="menu-middle-choices">
-                  <a href="#"><span id="middleChoice2">High Interest Savings</span></a>
-                </div>
-                <div class="menu-middle-choices">
-                  <a href="#"><span id="middleChoice3">View All</span></a>
-                </div>
-                <div class="menu-middle-choices">
-                  <a href="#"><span id="middleChoice4"></span></a>
-                </div>
-                <div class="menu-middle-choices">
-                  <a href="#"><span id="middleChoice5"></span></a>
-                </div>
-                <div class="menu-middle-choices">
-                  <a href="#"><span id="middleChoice6"></span></a>
-                </div>
             </div>
-
-            <div class ="menu-right">
-                <div class="menu-right-heading">
-                  <h2>Tools and resources</h2>
-                </div>
-                <div class="menu-right-choices">
-                  <a href="#"><span id="rightChoice1">Today's rates</span></a>
-                </div>
-                <div class="menu-right-choices">
-                  <a href="#"><span id="rightChoice2"></span></a>
-                </div>
-                <div class="menu-right-choices">
-                  <a href="#"><span id="rightChoice3"></span></a>
-                </div>
-                <div class="menu-right-choices">
-                  <a href="#"><span id="rightChoice4"></span></a>
-                </div>
-                <div class="menu-right-choices">
-                  <a href="#"><span id="rightChoice5"></span></a>
-                </div>
-            </div>
-
-      </div>
-    </div>
-
-
-    <!--Overlay when the search button is clicked-->
-    <div class = "search-container">
-      <div class = "header">     
-        <div class = "header-left-box">
-          <button type ="button" id="menuBtn2">Menu</button>
-          <button type ="button" id="searchBtn2">Search</button>
+          </div>
         </div>
-  
-        <div class = "header-middle-box">
-          <h1>Insert Image Here</h1>
-        </div>
-  
-        <div class = "header-right-box">
-          <button type = "button" id="joinBtnHidden2">Join</button>
-          <button type = "button" id="signOnBtnChange2">&times; Close</button>
+
+        <div class="signOn-LoginBox-Btn">
+          <div class="signOn-LoginBox-Format">
+            <button type="button" id="LoginBox-RegisterBtn">Register</button>
+          </div>
+          <div class="signOn-LoginBox-Format">
+            <button type="button" id="LoginBox-signOnBtn">Sign On</button>
+          </div>
         </div>
       </div>
 
-      <div class = "searchBar-background">
 
-          <div class ="searchBar-div">
-            <input type = "text" placeholder="What can we help you find?"/>
-            <button type="button"><i class='fas fa-search'></i></button>
-          </div>
+    </div>
 
+
+  </div>
+
+  <!--Alert box-->
+  <div class="alert-box" id="alert-box-portion">
+    <p><i class='fas fa-exclamation-triangle'></i>COVID-19: We're to help with whatever you need.<a href="#">Tell us
+        more</a></p>
+  </div>
+
+  <!--First row of information-->
+  <div class="row-1" id="row-1">
+    <div class="row-1-content">
+      <div class="row-1-box-top">
+        <h1>Bank Your Way to more cash</h1>
       </div>
-
-    </div>
-
-
-    <!--Overlay when sign on button is clicked-->
-    <div class = "signOn-Container">
-        <!--Preserves the original fixed header on top-->
-        <div class = "header">     
-            <div class = "header-left-box">
-              <button type ="button" id="menuBtn">Menu</button>
-              <button type ="button" id="searchBtn">Search</button>
-            </div>
-      
-            <div class = "header-middle-box">
-              <h1>Insert Image Here</h1>
-            </div>
-      
-            <div class = "header-right-box">
-              <button type = "button" id="joinBtnHidden">Join</button>
-              <button type = "button" id="signOnBtnChange">&times; Close</button>
-            </div>
-          </div>
-
-         
-          <div class="signOn-background">
-
-            <!-- The sign-on contents of overlay-->
-            <div class = "signOn-LoginBox">
-                <div class ="signOn-LoginBox-Header">
-                    <h2>Sign on to Online banking</h2>
-                </div>
-                
-                <div class="signOn-LoginBox-Credentials">
-                    <div class="signOn-LoginBox-CardNumber">
-                        <div class="signOn-LoginBox-Credentials-Format"> 
-                          <p>Card Number</p>
-                        
-                        
-                          <input type="text"/>
-                        </div>
-                      </div>
-                    <div class ="signOn-LoginBox-Password">
-                      <div class="signOn-LoginBox-Credentials-Format">    
-                        <p>Password</p>
-                      
-                      
-                        <input type="password"/>
-                     
-                      <div class="forgotPassword"> 
-                          
-                            <a href="#">Reset your password</a>
-                          </div>
-                       </div>
-                    </div>
-                </div>
-
-                <div class="signOn-LoginBox-Btn">
-                    <div class="signOn-LoginBox-Format">
-                        <button type="button" id="LoginBox-RegisterBtn">Register</button>
-                    </div>
-                    <div class="signOn-LoginBox-Format">
-                        <button type="button" id="LoginBox-signOnBtn">Sign On</button>
-                    </div>
-                </div>
-            </div>
-
-
-          </div>
-
-
-    </div>
-
-    <!--Alert box-->
-    <div class = "alert-box">
-      <p><i class='fas fa-exclamation-triangle'></i>COVID-19: We're to help with whatever you need.<a href="#">Tell us more</a></p>
-    </div>
-    
-     <!--First row of information-->
-  <div class = "row-1">
-    <div class = "row-1-content">
-        <div class = "row-1-box-top"> 
-          <h1>Bank Your Way to more cash</h1>
+      <div class="row-1-box-middle">
+        <div class="row-1-box-middle-left">
+          <h2>Chequing Account</h2>
+          <p>Open an account today and complete</p>
+          <p>payroll or pension deposits for 3 months</p>
+          <p>and earn $200.</p>
         </div>
-        <div class = "row-1-box-middle">
-            <div class = "row-1-box-middle-left">   
-              <h2>Chequing Account</h2>
-              <p>Open an account today and complete</p>
-              <p>payroll or pension deposits for 3 months</p>
-              <p>and earn $200.</p>
-            </div>
-            <div class = "row-1-box-middle-right">   
-              <h2>Saving Account</h2>
-              <p>Deposit new funds and earn up to</p>
-              <p>2.00% for a limited time.</p>
-            </div>
+        <div class="row-1-box-middle-right">
+          <h2>Saving Account</h2>
+          <p>Deposit new funds and earn up to</p>
+          <p>2.00% for a limited time.</p>
         </div>
-        <div class ="row-1-box-bottom">
-          <button>Check out these offers</button>
-        </div>
+      </div>
+      <div class="row-1-box-bottom">
+        <button>Check out these offers</button>
+      </div>
     </div>
   </div>
 
   <!--Second row of information-->
-  <div class = "row-2">
-    <div class = "row-2-heading">
+  <div class="row-2" id="row-2">
+    <div class="row-2-heading">
       <h1>All the perks, none of the fees</h1>
     </div>
-    <div class ="row-2-container">
-    <div class="row-2-content-1">
-      <h1>We make it simple</h1>
-      <p>Bank with us anytime, anywhere. Manage your money online, on your phone or at any ATM with no monthly fees.</p>
-      <button type="button" id="row-2-content-1-btn">Join us</button>
-    </div>
+    <div class="row-2-container">
+      <div class="row-2-content-1">
+        <h1>We make it simple</h1>
+        <p>Bank with us anytime, anywhere. Manage your money online, on your phone or at any ATM with no monthly fees.
+        </p>
+        <button type="button" id="row-2-content-1-btn">Join us</button>
+      </div>
 
-    <div class="row-2-content-2">
-    <h1>No-fee offer</h1>
-    <p>Life's busy. Keep things simple and enjoy no-fee daily banking without a minimum balance.</p>
-    <button type="button" id="row-2-content-2-btn">Tell me more</button>
-    </div>
+      <div class="row-2-content-2">
+        <h1>No-fee offer</h1>
+        <p>Life's busy. Keep things simple and enjoy no-fee daily banking without a minimum balance.</p>
+        <button type="button" id="row-2-content-2-btn">Tell me more</button>
+      </div>
 
-    <div class="row-2-content-3">
-    <h1>Load up on special offers</h1>
-    <p>Get the most out of your banking with special perks.</p>
-    <button type="button" id="row-2-content-3-btn">Tell me what I can get</button>
-    </div>
+      <div class="row-2-content-3">
+        <h1>Load up on special offers</h1>
+        <p>Get the most out of your banking with special perks.</p>
+        <button type="button" id="row-2-content-3-btn">Tell me what I can get</button>
+      </div>
     </div>
 
   </div>
 
-  <!--Third row of information-->
-   
+  <!--Footer -->
+  <div class="footer-container">
+    <div class="footer-links">
+      <div class="footer-link-wrapper">
+        <div class="footer-link-items">
+          <h2>Navigation</h2>
+          <a href="#alert-box-portion">Alert Box</a>
+          <a href="#row-1">Banner</a>
+          <a href="#row-2">Perks</a>
+         
+        </div>
+        <div class="footer-link-items">
+          <h2>About Us</h2>
+          <a href="#">How it works</a>
+          <a href="#">Test</a>
+          <a href="#">Careers</a>
+          <a href="#">Terms of services</a>
+        </div>
+      </div>
+      <div class="footer-link-wrapper">
+        <div class="footer-link-items">
+          <h2>News & Info</h2>
+          <a href="#">Press Releases</a>
+          <a href="#">Product Support</a>
+          <a href="#">Product Manuals</a>
+          <a href="#">Newletter Sign Up</a>
+        </div>
+        <div class="footer-link-items">
+          <h2>Social Media</h2>
+          <a href="https://www.instagram.com/?hl=en" target="_blank">Instagram</a>
+          <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+          <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+          <a href="https://twitter.com/?lang=en" target="_blank">Twitter</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-  
-   <script src="javascript/script.js"></script>
+
+
+  <script src="javascript/script.js"></script>
 </body>
+
 </html>
