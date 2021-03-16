@@ -1,34 +1,47 @@
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+}
 body {
-  margin: 79.05px 0px 0px 0px;
+  margin: 63.42px 0px 0px 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
 }
 
 .header {
+  box-sizing: border-box;
   background-color: #333333;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%;
   z-index: 1;
+  margin: 0;
+  padding: 0;
 }
 .fa-bank {
   color:white;
   font-size: 100px;
   padding: 1rem;
 }
-.header-left-box,
-.header-middle-box,
-.header-right-box {
-  padding: 0 10px;
+.header-left-box, .header-middle-box, .header-right-box {
+  box-sizing: border-box;
 }
+.header-right-box {
+  margin-right: 10px;
+}
+
 .header-left-box button,
 .header-right-box button,
 .close {
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  margin: 10px; /*top&bottom(px) right&left(px)*/
   outline: none;
   color: white;
   border: none;
@@ -53,17 +66,34 @@ body {
 
 #signOnBtn {
   background-color: red;
+
 }
 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
+ #menuOption {
+   visibility: hidden;
+ }
   #searchBtnSelected {
     display: none;
   }
   #joinBtn {
     display: none;
   }
+  .fa-bank {
+    font-size: 50px;
+  }
 }
+
+@media screen and (max-width: 370px){
+.header-right-box button {
+ 
+  padding: 5px;
+}
+}
+
+
+
 
 /* The overlay style - menu option, when clicked */
 .menu-container {
@@ -85,7 +115,7 @@ body {
   width: 100%;
   height: 350px;
   position: fixed;
-  top: 79.05px;
+  top: 39px;
   display: flex;
   justify-content: space-around;
 }
@@ -135,6 +165,13 @@ body {
   font-size: 24px;
 }
 
+@media screen and (max-width: 753px){
+  .menu-choices {
+     height: 600px;
+     top: 59px;
+  }
+}
+
 /*The Overlay when the search button is clicked*/
 
 .search-container {
@@ -154,15 +191,15 @@ body {
   border-top: 2px solid #272727;
   background-color: #333333;
   position: fixed;
-  top: 79.05px;
+  top: 63px;
   width: 100%;
   height: 100px;
-
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .searchBar-div {
-  width: 50%;
+  width: 40%;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -208,17 +245,19 @@ body {
   width: 100%;
   height: 350px;
   position: fixed;
-  top: 79.05px;
+  top: 64px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .signOn-LoginBox {
+  box-sizing: border-box;
   background-color: #ffffff;
-  width: 50%;
-  height: 280px;
   border-radius: 20px;
+  
+  height: 72%;
+  width: 50%;
 }
 
 .signOn-LoginBox-Header {
@@ -228,20 +267,27 @@ body {
 .signOn-LoginBox-Credentials {
   display: flex;
   justify-content: space-around;
+  
 }
 
-.signOn-LoginBox-Credentials-Format {
+.signOn-LoginBox-CardNumber, .signOn-LoginBox-Password {
+width: 45%;
+}
+.signOn-LoginBox-CardNumber p, .signOn-LoginBox-Password p {
+  margin-bottom: 0.2rem;
+
+}
+.signOn-LoginBox-CardNumber input, .signOn-LoginBox-Password input{
+  box-sizing: border-box;
   width: 100%;
-  margin: 0px;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  outline: none;
 }
+#SignOn-userInput:focus {
+  background-color: lightblue;
 
-input[type="text"],
-input[type="password"] {
-  padding: 12px 110px 12px 5px;
-}
-input[type="text"]:focus,
-input[type="password"]:focus {
-  background-color: #f5eded;
 }
 
 .signOn-LoginBox-Btn {
@@ -249,9 +295,11 @@ input[type="password"]:focus {
   justify-content: space-around;
   height: 30%;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .signOn-LoginBox-Format {
+  
   width: 45%;
 }
 
@@ -281,19 +329,32 @@ input[type="password"]:focus {
 #LoginBox-signOnBtn:hover {
   background-color: rgb(219, 16, 16);
 }
+@media screen and (max-width: 700px){
+  .signOn-background {
+    height: 450px;
+  }
+  .signOn-LoginBox {
+    height: 60%;
+  width: 90%;
+  }
+}
 
 /*The alert box style*/
 .alert-box {
+  box-sizing: border-box;
   background-color: #e0f0fd;
   padding: 10px;
+  width: 100%;
+  
 }
 .alert-box p {
-  text-indent: 20px;
+  padding: 0 20px;
   font-size: 16px;
 }
 
 /*First row of content*/
 .row-1 {
+  box-sizing: border-box;
   border-top: 1px solid #e0f0fd;
   height: 569.52px;
   background-image: url("/images/staringAtBeach.jpg");
@@ -302,6 +363,7 @@ input[type="password"]:focus {
   position: relative;
 }
 .row-1-content {
+  box-sizing: border-box;
   background-color: rgb(246, 244, 244);
   position: absolute;
   top: 80px;
@@ -336,7 +398,6 @@ margin: 0.3rem;
 .row-1-box-bottom {
   display: flex;
   justify-content: center;
-  
   margin: 0.8rem;
 }
 .row-1-box-bottom button {
@@ -356,32 +417,55 @@ margin: 0.3rem;
   background-color: #292929;
   transition: all 0.4s ease;
 }
+
+@media screen and (max-width: 700px){
+
+.row-1-content {
+  
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 0px;
+  box-shadow: none;
+}
+}
+
+
 /* Row 2  */
+.row-2 {
+box-sizing: border-box;
+width: 100%;
+
+}
 .row-2-heading {
   text-align: center;
+  
 }
 .row-2-container {
+  
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
  padding-bottom: 6rem;
+ 
 }
 
 .row-2-content-1,
 .row-2-content-2,
 .row-2-content-3 {
+
   margin: 1rem;
-  max-width: 20rem;
+  width: 30%;
   text-align: center;
-  padding: 10px 20px;
-  border-radius: 10px;
   padding: 3rem;
+  border-radius: 10px;
+  
 }
 
 .row-2-content-1 p,
 .row-2-content-2 p,
 .row-2-content-3 p {
   font-size: 18px;
-
   margin-top: 0;
 }
 .row-2-content-1 h1,
@@ -406,7 +490,7 @@ margin: 0.3rem;
   color: #333333;
   cursor: pointer;
   border-radius: 20px;
-  width: 15rem;
+  width: 100%;
   padding: 0.5rem;
   font-size: 18px;
   transition: all 0.4s ease;
@@ -423,7 +507,7 @@ margin: 0.3rem;
   outline: none;
   border: 1px solid rgb(128, 128, 128);
   border-radius: 20px;
-  width: 15rem;
+  width: 100%;
   padding: 0.5rem;
   font-size: 18px;
   transition: all 0.4s ease;
@@ -434,22 +518,33 @@ margin: 0.3rem;
   color: #ffffff;
   transition: all 0.4s ease;
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 701px){
 .row-2 {
   display: flex;
 flex-direction: column;
-justify-content: center;
-align-items: center;
 }
 .row-2-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+align-items: center;
+flex-wrap:nowrap;
+}
+
+.row-2-content-1,
+.row-2-content-2,
+.row-2-content-3 {
+  margin: 0;
+  width: 70%;
+  text-align: center; 
+  padding: 2rem;
 }
 }
 
 /* Footer */
 
 .footer-container {
+  box-sizing: border-box;
   background-color: #333333;
   padding: 5rem 0;
   display: flex;
@@ -490,4 +585,23 @@ align-items: center;
 .footer-link-items a:hover {
   color: #e7d6d6;
   transition: 0.5 ease-out;
+}
+.footer-copyright {
+  color: white;
+  font-style: italic;
+}
+@media screen and (max-width: 700px) {
+  .footer-link-wrapper {
+    flex-direction: column;
+  }
+  
+}
+
+@media screen and (max-width: 376px) {
+ .footer-link-items {
+ 
+  /* width: 100px; */
+  margin: 0px;
+ 
+}
 }
