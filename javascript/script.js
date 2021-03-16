@@ -1,3 +1,4 @@
+// Sign On portion
 const signOnBtn = document.querySelector("#signOnBtn");
 let menuBtn = document.querySelector("#menuBtn");
 let searchBtn = document.querySelector("#searchBtn");
@@ -21,6 +22,14 @@ function closedOverlay() {
   signOnContainer.style.display = "none";
 }
 
+//When the sign on menu is active
+const activeRegisterBtn = document.querySelector("#LoginBox-RegisterBtn");
+const activeSignOnBtn = document.querySelector("#LoginBox-signOnBtn");
+
+activeRegisterBtn.addEventListener("click", closedOverlay);
+activeSignOnBtn.addEventListener("click", closedOverlay);
+
+// Menu portion
 let menuOpen = document.querySelector(".menu-container");
 let menuHeader = document.querySelector("#menuHeader");
 let menuBtn1 = document.querySelector("#menuBtn1");
@@ -56,14 +65,20 @@ for (var i = 0; i < menuLeftChoices.length; i++) {
   });
 }
 
-function menuSubList() {
-  let middleChoice1 = document.querySelector("#middleChoice1");
-  let middleChoice2 = document.querySelector("#middleChoice2");
-  let middleChoice3 = document.querySelector("#middleChoice3");
-  let middleChoice4 = document.querySelector("#middleChoice4");
-  let middleChoice5 = document.querySelector("#middleChoice5");
-  let middleChoice6 = document.querySelector("#middleChoice6");
+let middleChoice1 = document.querySelector("#middleChoice1");
+let middleChoice2 = document.querySelector("#middleChoice2");
+let middleChoice3 = document.querySelector("#middleChoice3");
+let middleChoice4 = document.querySelector("#middleChoice4");
+let middleChoice5 = document.querySelector("#middleChoice5");
+let middleChoice6 = document.querySelector("#middleChoice6");
 
+middleChoice1.addEventListener("click", closeMenuOverlay);
+middleChoice2.addEventListener("click", closeMenuOverlay);
+middleChoice3.addEventListener("click", closeMenuOverlay);
+middleChoice4.addEventListener("click", closeMenuOverlay);
+middleChoice5.addEventListener("click", closeMenuOverlay);
+middleChoice6.addEventListener("click", closeMenuOverlay);
+function menuSubList() {
   for (var i = 0; i < menuLeftChoices.length; i++) {
     if (menuLeftChoices[i].classList.contains("active")) {
       //Accounts option selected
@@ -152,6 +167,8 @@ function menuSubList() {
   }
 }
 
+// Search option
+
 let searchBtnSelected = document.querySelector("#searchBtnSelected");
 let searchContainer = document.querySelector(".search-container");
 
@@ -159,6 +176,8 @@ let menuBtn2 = document.querySelector("#menuBtn2");
 let searchBtn2 = document.querySelector("#searchBtn2");
 let joinBtnHidden2 = document.querySelector("#joinBtnHidden2");
 let signOnBtnChange2 = document.querySelector("#signOnBtnChange2");
+
+const searchBtnClicked = document.querySelector("#search-btn");
 
 searchBtnSelected.addEventListener("click", searchOverlay);
 function searchOverlay() {
@@ -173,3 +192,5 @@ signOnBtnChange2.addEventListener("click", closeSearchOverlay);
 function closeSearchOverlay() {
   searchContainer.style.display = "none";
 }
+
+searchBtnClicked.addEventListener("click", closeSearchOverlay);
