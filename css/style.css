@@ -53,6 +53,7 @@ body {
 .fa,
 .fas {
   margin: 0 10px;
+  cursor:pointer;
 }
 .header-right-box button {
   border-radius: 20px;
@@ -166,9 +167,12 @@ body {
 }
 
 @media screen and (max-width: 753px){
+  .menu-container {
+    display: none;
+  }
   .menu-choices {
      height: 600px;
-     top: 59px;
+     top: 39px;
   }
 }
 

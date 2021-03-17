@@ -1,3 +1,10 @@
+//Banking icon
+const bankIcon = document.querySelector(".fa-bank");
+
+bankIcon.addEventListener("click", () => {
+  window.location.reload();
+});
+
 // Sign On portion
 const signOnBtn = document.querySelector("#signOnBtn");
 let menuBtn = document.querySelector("#menuBtn");
