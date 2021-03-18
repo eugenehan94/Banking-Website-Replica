@@ -79,12 +79,25 @@ let middleChoice4 = document.querySelector("#middleChoice4");
 let middleChoice5 = document.querySelector("#middleChoice5");
 let middleChoice6 = document.querySelector("#middleChoice6");
 
+let rightChoice1 = document.querySelector("#rightChoice1");
+let rightChoice2 = document.querySelector("#rightChoice2");
+let rightChoice3 = document.querySelector("#rightChoice3");
+let rightChoice4 = document.querySelector("#rightChoice4");
+let rightChoice5 = document.querySelector("#rightChoice5");
+
 middleChoice1.addEventListener("click", closeMenuOverlay);
 middleChoice2.addEventListener("click", closeMenuOverlay);
 middleChoice3.addEventListener("click", closeMenuOverlay);
 middleChoice4.addEventListener("click", closeMenuOverlay);
 middleChoice5.addEventListener("click", closeMenuOverlay);
 middleChoice6.addEventListener("click", closeMenuOverlay);
+
+rightChoice1.addEventListener("click", closeMenuOverlay);
+rightChoice2.addEventListener("click", closeMenuOverlay);
+rightChoice3.addEventListener("click", closeMenuOverlay);
+rightChoice4.addEventListener("click", closeMenuOverlay);
+rightChoice5.addEventListener("click", closeMenuOverlay);
+
 function menuSubList() {
   for (var i = 0; i < menuLeftChoices.length; i++) {
     if (menuLeftChoices[i].classList.contains("active")) {
