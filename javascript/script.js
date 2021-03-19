@@ -1,3 +1,4 @@
+let bodyTag = document.querySelector("body");
 //Banking icon
 const bankIcon = document.querySelector(".fa-bank");
 
@@ -22,11 +23,13 @@ function signOnDropDown() {
   menuBtn.style.visibility = "hidden";
   searchBtn.style.visibility = "hidden";
   joinBtn.style.visibility = "hidden";
+  bodyTag.classList.toggle("active");
 }
 
 signOnBtnClicked.addEventListener("click", closedOverlay);
 function closedOverlay() {
   signOnContainer.style.display = "none";
+  bodyTag.classList.toggle("active");
 }
 
 //When the sign on menu is active
@@ -206,11 +209,13 @@ function searchOverlay() {
   menuBtn2.style.visibility = "hidden";
   searchBtn2.style.visibility = "hidden";
   joinBtnHidden2.style.visibility = "hidden";
+  bodyTag.classList.toggle("active");
 }
 
 signOnBtnChange2.addEventListener("click", closeSearchOverlay);
 function closeSearchOverlay() {
   searchContainer.style.display = "none";
+  bodyTag.classList.toggle("active");
 }
 
 searchBtnClicked.addEventListener("click", closeSearchOverlay);
