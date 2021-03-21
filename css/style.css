@@ -222,7 +222,11 @@ body.active {
     font-size: 18px;
   }
 }
-
+@media screen and (max-width: 360px) {
+  .menu-choices {
+    top: 30px;
+  }
+}
 /*The Overlay when the search button is clicked*/
 
 .search-container {
@@ -752,6 +756,14 @@ body.active {
 }
 .fas.fa-envelope {
   cursor: default;
+}
+@media screen and (max-width: 700px) {
+  .row-4-content-2,
+  .row-4-content-3 {
+    box-sizing: border-box;
+    padding: 0 10px;
+    font-size: 14px;
+  }
 }
 
 /* Footer */
