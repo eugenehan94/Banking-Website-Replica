@@ -1,3 +1,6 @@
+//Add different pages to make it a like a real website
+//Set up re-directs for link options
+
 let bodyTag = document.querySelector("body");
 //Banking icon
 const bankIcon = document.querySelector(".fa-bank");
