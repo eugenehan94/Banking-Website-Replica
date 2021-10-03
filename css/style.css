@@ -418,11 +418,12 @@ body.active {
   box-sizing: border-box;
   border-top: 1px solid #e0f0fd;
   height: 569.52px;
-  background-image: url("/images/staringAtBeach.jpg");
+  background-image: url("../images/staringAtBeach.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
 }
+
 .row-1-content {
   box-sizing: border-box;
   background-color: rgb(246, 244, 244);
