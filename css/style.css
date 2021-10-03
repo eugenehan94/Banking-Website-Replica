@@ -10,6 +10,7 @@ body {
   height: 100%;
   width: 100%;
   overflow: auto;
+  font-family: Helvetica, sans-serif;
 }
 body.active {
   overflow: hidden;
@@ -764,6 +765,11 @@ body.active {
     box-sizing: border-box;
     padding: 0 10px;
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .row-4 h1 {
+    text-align: center;
   }
 }
 
